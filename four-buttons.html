@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Zom-B-Gone</title>
+</head>
+
+<body style="background-color: rgb(10, 0, 0);">
+
+  <a class="selectionButton fade-in-text" href="zombie-analysis.html"> Zombie Analysis </a>
+  <a class="selectionButton fade-in-text" href="survival-tools.html"> Survival Tools </a>
+  <a class="selectionButton fade-in-text" href="edible-plants.html"> Edible Plants </a>
+  <a class="selectionButton fade-in-text" href="water-source.html"> Water Sources </a>
+
+  <style>
+    .selectionButton {
+      padding: 25px;
+      background-color: rgb(194, 10, 10);
+      color: rgb(252, 252, 252);
+      border-radius: 5px;
+      border: none;
+      text-decoration: none;
+      margin: 50px;
+      font-size:24px;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .selectionButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .selectionButton:hover {
+      background-color: rgb(217, 69, 69);
+      /* 10 g  */
+    }
+
+    .selectionButton:active {
+      background-color: rgb(194, 10, 10);
+    }
+
+    .button2 {
+      padding: 50px;
+      background-color: rgb(194, 10, 10);
+      color: rgb(252, 252, 252);
+      border-radius: 5px;
+      border: none;
+      text-decoration: none;
+    }
+
+    .button {
+        padding: 8px;
+        background-color: rgb(194, 10, 10);
+        color: rgb(252, 252, 252);
+        border-radius: 5px;
+        border: none;
+        text-decoration: none;
+        margin: 10px;
+
+      }
+
+      .button:hover {
+        background-color: rgb(217, 69, 69);
+        /* 10 g  */
+      }
+
+      .button:active {
+        background-color: rgb(194, 10, 10);
+      }
+   
+
+  </style>
+
+    <main>
+      <div class="section" id="button1">
+      </div>
+
+      <div class="section" id="button2">
+      </div>
+
+      <div class="section" id="button3">
+      </div>
+
+      <div class="section" id="button4">
+      </div>
+    </main>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sentenceParagraphs = document.querySelectorAll(".fade-in-text");
+
+      sentenceParagraphs.forEach((paragraph, index) => {
+        setTimeout(() => {
+          paragraph.style.opacity = "1";
+        }, index * 1000); // Adjust the delay (1000ms in this case) to control the speed of the fade-in
+      });
+    });
+  </script>
+
+</body>
+
+</html>

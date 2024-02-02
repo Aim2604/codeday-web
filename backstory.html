@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backstory</title>
+    <style>
+        .fade-in-text {
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+        }
+    </style>
+</head>
+  
+<body style="background-color: rgb(10, 0, 0);">
+<div class="content">
+<u> <h1>Backstory</h1> </u>
+<style> 
+     h1 {
+       font-family: 'Times New Roman', Times, serif;
+       color: white;
+     }
+     u {
+       font-family: 'Times New Roman', Times, serif;
+       color: white;
+     }
+</style>
+
+
+<style>
+    p {
+      font-family: 'Times New Roman', Times, serif;
+      color: white;
+      font-size: 20px;
+    }
+</style>
+
+<div id="fade-in-container">
+    <p class="fade-in-text content">Once upon a time, in a galaxy far, far away... </p>
+    <p class="fade-in-text content">Covid evolves into a parasitic zombie virus that plagues Singapore</p>
+    <p class="fade-in-text content">The humans quickly turn into blood-thirsty zombies </p>
+    <p class="fade-in-text content">All zombies have one common goal: to eliminate any and all competition</p>
+    <p class="fade-in-text content">The only hope for survival is to rely on your own wits</p>
+    <p class="fade-in-text content">Natural selection has finally taken place</p>
+    <p class="fade-in-text content">Will YOU survive...?</p>
+</div>
+  
+  <a class="button fade-in-text" href="four-buttons.html"> CONTINUE </a>
+  </div>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const sentenceParagraphs = document.querySelectorAll(".fade-in-text");
+
+          sentenceParagraphs.forEach((paragraph, index) => {
+              setTimeout(() => {
+                  paragraph.style.opacity = "1";
+              }, index * 1000); // Adjust the delay (1000ms in this case) to control the speed of the fade-in
+          });
+      });
+  </script>
+
+  <style>
+      .button {
+          padding: 8px;
+          background-color: rgb(194, 10, 10);
+          color: rgb(252, 252, 252);
+          border-radius: 5px;
+          border: none;
+          text-decoration: none;
+          margin: 20px;
+        }
+    
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+        .button:hover {
+          background-color: rgb(217, 69, 69);
+          /* 10 g  */
+        }
+
+        .button:active {
+          background-color: rgb(194, 10, 10);
+        }
+    </style>
+ </body>
+</html>
